@@ -1,0 +1,7 @@
+git init
+git add . / git add file
+git commit -m "message"
+git remote add github git@github.com:lsqufo/gitlearn
+git remote add gitee git@gitee.com:lsqufo/gitlearn
+git push github master
+git push github master
