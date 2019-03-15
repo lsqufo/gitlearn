@@ -55,5 +55,3 @@ git remote rm origin 删除本地库与远程库origin的链接
 git config --global color.ui true 让Git显示颜色
 git add -f file 强制添加file到git
 git check-ignore -v file 命令检查.gitignore里面哪个规则忽略了该file
-git config --global alias.<tag> <command>
-测试下
