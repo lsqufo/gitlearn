@@ -1,0 +1,58 @@
+git init 初始化仓库
+配置文件
+git config --global user.name "lsqufo"
+git config --global user.email "lsqufo@outlook.com"
+git config --global alias.<tag> <command> 给某个命令起一个别名
+git add file 
+git commit -m "prompt"  提交到本地版本库
+git status 查看status
+git diff file  查看区别
+git diff HEAD -- file 查看工作区和版本库里面最新版本的区别
+git diff git diff HEAD -- file 查看工作区和版本库里面最新版本的区别
+git reset --hard commit_id 回退到commit_id
+git checkout -- file 用版本库里的版本替换工作区的版本
+git reset HEAD file  把暂存区的修改撤回到工作区
+git log    查看log
+git reflog 查看以往的信息
+git rm file 从版本库中删除该文件
+git clone git@github.com:lsqufo/gitlearn.git 克隆远程库
+ssh-keygen -t rsa -C "lsqufo@outlook.com"  生成ssh密钥
+git remote add <name> git@github.com:lsqufo/gitlearn.git  与远程库<name>关联
+git push -u origin master 第一次把当前分支推送到远程origin master分支
+git push origin master 把当前分支推送到远程origin master分支
+git push -u origin master 第一次把当前分支master推送到远程origin
+git push origin master 把当前分支master推送到远程origin
+git branch 查看分支
+git branch <name> 创建分支
+git checkout <name> 切换分支
+git checkout -b <name> 创建并且切换分支
+git merge <name> 合并<name>分支到当前分支
+git branch -d <name> 删除分支
+git log --graph --pretty=oneline --abbrev-commit 可以看到分支合并图
+git merge --no-ff -m "merge with no-ff" dev --no-ff参数，表示禁用Fast forward,可以看出曾经做过分支合并
+git stash 把现场进行保存
+git stash list 列出保存过的stash
+git stash apply 恢复现场，不删除stash
+git stash pop   恢复现场，删除stash
+git branch -D <name> 强行删除没有被合并过的分支
+git remote 查看远程库的信息
+git remote -v 显示更详细的信息
+git pull 提取并且合并
+git pull --rebase =  git fetch  + rebase
+git fetch 提取
+git branch --set-upstream-to=origin/dev dev
+git rebase 把本地未push的分叉提交历史整理成直线
+git tag 查看所有标签
+git tag <name> 打一个新标签到最新提交的commit_id
+git tag <name> commit_id
+git show <tagname>  查看标签信息
+git tag -a <tagname> -m "blablabla..." 指定标签信息
+git push origin <tagname>  推送某个标签到远程
+git push origin --tags 一次性推送全部尚未推送到远程的本地标签
+git tag -d <tagname> 删除本地某个tag
+git push origin :refs/tags/<tagname>  先删除本地然后推送到远程，就可以删掉远程库的tag
+git remote rm origin 删除本地库与远程库origin的链接
+git config --global color.ui true 让Git显示颜色
+git add -f file 强制添加file到git
+git check-ignore -v file 命令检查.gitignore里面哪个规则忽略了该file
+git config --global alias.<tag> <command>
