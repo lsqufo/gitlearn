@@ -19,21 +19,19 @@ ssh-keygen -t rsa -C "lsqufo@outlook.com"  生成ssh密钥
 git remote add <name> git@github.com:lsqufo/gitlearn.git  与远程库<name>关联
 git push -u origin master 第一次把当前分支推送到远程origin master分支
 git push origin master 把当前分支推送到远程origin master分支
-git push -u origin master 第一次把当前分支master推送到远程origin
-git push origin master 把当前分支master推送到远程origin
 git branch 查看分支
 git branch <name> 创建分支
 git checkout <name> 切换分支
 git checkout -b <name> 创建并且切换分支
 git merge <name> 合并<name>分支到当前分支
 git branch -d <name> 删除分支
+git branch -D <name> 强行删除没有被合并过的分支
 git log --graph --pretty=oneline --abbrev-commit 可以看到分支合并图
 git merge --no-ff -m "merge with no-ff" dev --no-ff参数，表示禁用Fast forward,可以看出曾经做过分支合并
 git stash 把现场进行保存
 git stash list 列出保存过的stash
 git stash apply 恢复现场，不删除stash
 git stash pop   恢复现场，删除stash
-git branch -D <name> 强行删除没有被合并过的分支
 git remote 查看远程库的信息
 git remote -v 显示更详细的信息
 git pull 提取并且合并
