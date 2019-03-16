@@ -8,7 +8,6 @@ git commit -m "prompt"  提交到本地版本库
 git status 查看status
 git diff file  查看区别
 git diff HEAD -- file 查看工作区和版本库里面最新版本的区别
-git diff git diff HEAD -- file 查看工作区和版本库里面最新版本的区别
 git reset --hard commit_id 回退到commit_id
 git checkout -- file 用版本库里的版本替换工作区的版本
 git reset HEAD file  把暂存区的修改撤回到工作区
